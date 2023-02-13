@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-ex-vjh3
+  namespace: johnmcollier-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:32b8835b0ff3adbf5b62b2242c8805ad6e213d7ae6e279acf2350b80b94fcc4b
+        name: my-python
+        resources: {}
+status: {}
